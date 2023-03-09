@@ -167,6 +167,7 @@ input[type=submit]{
     height: 5vh;
     width: 20vw;
     margin-top: 5%;
+    cursor: pointer;  /* pointer mouse */
 }
 /* .paypal{
     margin-top: 5%;

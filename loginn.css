@@ -64,6 +64,7 @@ a:hover{
    padding-right: 2.5rem;
     padding-left: 2.5rem;
     animation: 250px;
+    width: 400px;
     
 }
 
@@ -132,6 +133,8 @@ input[type=submit]{
     font-family:  'Space Grotesk', sans-serif;
     font-weight: 500;
     border-radius: 10px;
+    cursor: pointer;  /* pointer mouse */
+    
 }
 .forget{
     margin-top: 40px;
