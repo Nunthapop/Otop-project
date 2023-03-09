@@ -34,7 +34,7 @@ if($query1 and $query4 ){
     foreach($_SESSION['cart'] as $id){
         unset($_SESSION['cart']);
     }
-    Header("Location:shop.php");
+    Header("Location:order_confirmed.php");
 }
 
 ?>
