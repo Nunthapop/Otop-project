@@ -169,27 +169,7 @@ input[type=submit]{
     margin-top: 5%;
     cursor: pointer;  /* pointer mouse */
 }
-/* .paypal{
-    margin-top: 5%;
-    text-transform: uppercase;
-    color: aliceblue;
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: #faf9f9;
-    border: 0px;
-    border-radius: 10px;
-    font-size: 2rem;
-    height: 5vh;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    border:3px solid #222;
-    align-items: center;
-} */
-/* .paypal img{
-    
-    height: 4vh;
-    width: auto;
-} */
+
 input[type=text]{
     width: 400px;
     min-height: 2.3rem;
