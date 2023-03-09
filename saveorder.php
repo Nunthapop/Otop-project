@@ -28,4 +28,3 @@ foreach($_SESSION['cart'] as $p_id=>$qty)
     $query4	= mysqli_query($conn, $sql4);
 }
 ?>
-ldldldld
