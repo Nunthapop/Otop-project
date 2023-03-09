@@ -1,0 +1,139 @@
+:root{
+    background-color: #F2F2F2;
+    font-family:  'Space Grotesk', sans-serif;
+}
+*{
+    box-sizing: border-box;
+
+}
+.pic{
+    margin-top: 80px;
+    margin-left: 50px;
+    padding-right:3.125rem ;
+    animation: fadeIn 2s;
+    position: relative;
+}
+.text {
+    position: absolute;
+    top:-40px;
+   left: 40px;
+   color: #000000;
+   
+   border-radius: 70%;
+   width: 100px;
+   text-align: center;
+   font-size: 15px;
+   
+}
+
+a:hover{
+    opacity: 50%;
+}
+.home{
+    position: absolute;
+    top:-50px;
+    left: 10px;
+    max-width:35px;   
+}
+
+
+.footer{
+    margin-top: 260px;
+    opacity: 70%;
+    
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+.login p{
+    padding: 1.25rem;
+    font-size: 1rem;
+    text-align: center;
+
+    
+}
+.login h3{
+    font-size: 1rem;
+    color: #EC5B29;
+}
+.login{
+    background-color: #FEFCF3;
+   padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    animation: 250px;
+    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.2;
+    transform: translateY(50%); }
+    100% { opacity: 1;
+        transform: translateY(0%);  }
+  }
+
+input[placeholder]{
+    opacity: 40% ;
+}
+input[placeholder]:focus{
+    opacity: 110% ;
+}
+
+.input input[type=password],
+.input input[type=text]{
+    
+    max-width: 350px;
+   min-height: 3rem;
+   background-color: #FEFCF3;
+   border-top: 0px solid white;
+   border-left: 0px solid white;
+   border-right: 0px solid;
+   border-bottom: 0px solid rgb(238, 237, 237);
+   border-bottom: 1px solid #181823;
+   
+}
+
+.input input[type=text]:active,
+.input input[type=text]:focus,
+.input input[type=text]:hover{
+    outline: none;
+    border-bottom: 2px solid #000000;
+}
+.input input[type=password]:active,
+.input input[type=password]:focus,
+.input input[type=password]:hover{
+    outline: none;
+    border-bottom: 2px solid #000000;
+}
+.input input[type=submit]:hover{
+    border: 5px solid #EC5B29;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
+.input label{
+    font-size: 17px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    animation: fadeIn 5s;
+    
+}
+input[type=submit]{
+    margin-top: 90px;
+    max-width: 350px;
+    min-height: 80px;
+    font-size: 1rem;
+    border: 0px;
+    background-color: #181823;
+    color: #F2F2F2;
+    font-family:  'Space Grotesk', sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.forget{
+    margin-top: 40px;
+    animation: fadeIn 3s;
+}

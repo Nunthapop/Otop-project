@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+   background-color: #F2F2F2;
+}
+/* ul.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FEFCF3;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 5rem;
+    align-items: center;
+    
+} */
+/* li{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+font-size: 2rem;
+} */
+.hero-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 700px;
+}
+ /* Create keyframe fadein */
+@keyframes fadeIn {
+    0% { opacity: 0.2;
+    transform: translateY(50%); }
+    100% { opacity: 1;
+        transform: translateY(0%);  }
+  }
+.hero-img{
+max-height: 500px;
+width: auto;
+animation: fadeIn 4s; 
+
+}
+
+.hero-font1{
+    animation: fadeIn 1s;
+    font-family: 'Lato', sans-serif;
+font-weight: 700;
+font-size: 3rem;
+text-align: center;
+}
+.banner-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.name-grid{
+    display: grid;
+    grid-template-columns:  1fr ;
+    grid-template-rows: 170px 50px;
+    row-gap: 20px;
+}
+.about-us-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFCF3;
+    height: 300px;
+    font-family: 'Lato', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+}
+.about-us{
+    display: grid;
+    /* border: 1px solid rgb(0, 0, 0); */
+    grid-template-columns:  1fr ;
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.image-block{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    /* border: 1px solid rgb(218, 16, 16); */
+    column-gap: 100px;
+    align-items: stretch; /* snap to the top */
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    
+    
+}
+.img-block {
+    width: 100px;
+    height: 150px;
+    
+}
+.block p {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.block{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+.block img{
+    height: auto;
+    width: 60%;
+}
+.block-desc{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 10rem;
+   
+}
+
+/* loop animation */
+.marquee{
+   
+    background-color: #1B1B1C;
+    overflow: hidden;   /* ซ้อน wrapper ถ้าเกิน*/ 
+ 
+  width: 100%;  
+}
+.marquee-wrapper{
+    
+    margin-top: 5px;
+    width: 200%;      /* ตั้งให้ยาวกว่า  marquee*/ 
+         
+    animation: move-loop 50s linear  infinite ;
+}
+.marquee-wrapper span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 50;
+    font-size: 1.5rem;
+    color: #F2F2F2;
+    
+}
+.marquee-wrapper span::after{
+    content:" Bangkok-Phuket-Chiang Mai-Pattaya-Krabi-Koh Samui-Ayutthaya-Hua Hin-Udon Thani-Surat Thani-Khon Kaen-Pathum Thani-Nakhon Sawan✳ ";
+}
+/* .inbox1,.marquee{
+    border: 1px solid red;
+}  */
+@keyframes move-loop{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+
+}
