@@ -7,7 +7,7 @@ ini_set("memory_limit",-1); // no ram limit;
 
 <html>
     <head>
-    <link rel="stylesheet" href="header_indexx.css">
+    <link rel="stylesheet" href="css/header_indexx.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,5 +1,5 @@
 <html> 
-    <link rel="stylesheet" href="ft.css">
+    <link rel="stylesheet" href="css/ft.css">
     <body> 
         <div class="footer" style="height: 70px">
 CUSTOMER SERVICE

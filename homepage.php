@@ -9,7 +9,7 @@ require "header_index.php";
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="css/homepage.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
