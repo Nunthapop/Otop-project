@@ -1,7 +1,11 @@
+<?php require "header_index.php";
+$customer_id = $_SESSION['customer_id'];?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="profile.css" />   <!-- use same css - profile -->
+    <link rel="stylesheet" href="css/order-history.css" />   <!-- use same css - profile -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +21,8 @@
    
     <div class="Box">
         <div class="nav-bar">
-            <div class="profile">profile</div>
-            <div class="order-history">order-history</div>
+        <div class="profile"> <a href="profile.php">profile</a></div>
+            <div class="order-history"><a href="order-history.php">order-history</a></div>
         </div>
         <form action="saveprofile.php">
         <div class="profile-side">

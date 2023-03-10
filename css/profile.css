@@ -20,6 +20,24 @@ main{
     display: grid;
     grid-template-columns: 350px 1fr;
     margin-left: 15%;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.1);
+}
+a{
+    color: #222;
+}
+@keyframes hover{
+    0%{ font-size: 1.3rem;}
+    0%{ font-size: 1.5rem;}
+    20%{ font-size: 1.5rem;}
+    100%{ font-size: 1.5rem;}
+}
+.profile a:hover{
+    animation: hover 30s;
+    opacity: 60%    ;
+}
+.order-history a:hover{
+    animation: hover 30s;
+    opacity: 60%    ;
 }
 .nav-bar{
     /* border: 1px solid red; */
