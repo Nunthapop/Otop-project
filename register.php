@@ -6,14 +6,20 @@ if (isset($_SESSION['error_msg'])) {
     }?>
 
 <html>
+    <head><h1>REGISTER</h1>
+<link rel="stylesheet" href="regis.css"></head>
     <form action="register_check.php" method="post">
         <body>
-            <p>username<input type="text" name="username"></p>
-            <p>firstname<input type="text" name="firstname"></p>
-            <p>lastname<input type="text" name="lastname"></p>
-            <p>password<input type="text" name="password"></p>
+            <div class="back"></div>
+            <div class="container">
+            <p>USERNAME : <input type="text" name="username"></p>
+            <p>FIRSTNANME : <input type="text" name="firstname"></p>
+            <p>LASTNAME : <input type="text" name="lastname"></p>
+            <p>PASSWORD : <input type="text" name="password"></p></div>
         </body>
-        <input type="submit" name="submit" value="submit">
+        <br>
+        <div class="input">
+        <input type="submit" name="submit" value="SUBMIT"><input type="reset" name="reset" value="CANCEL"></div>
 
     </form>
 </html>
