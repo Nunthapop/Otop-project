@@ -1,5 +1,20 @@
 <?php require "header_index.php";
-$customer_id = $_SESSION['customer_id'];?>
+$customer_id = $_SESSION['customer_id'];
+
+
+$query = "SELECT 
+oh.id as order_id, 
+oh.total, 
+od.product_id, 
+count(od.id) as product_count, 
+p.product_name 
+FROM order_head as oh 
+JOIN order_detail as od on oh.id = od.order_head_id
+JOIN product as p on od.product_id = p.id 
+WHERE oh.id = 1
+GROUP BY oh.id, oh.total, od.product_id, p.product_name;"
+
+?>
 
 
 <!DOCTYPE html>
