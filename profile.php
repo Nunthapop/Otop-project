@@ -1,3 +1,6 @@
+
+<?php require "header_index.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,15 +20,20 @@
             <div class="profile">profile</div>
             <div class="order-history">order-history</div>
         </div>
+        <form action="saveprofile.php">
         <div class="profile-side">
             <div class="head">Profile </div>
-            <div class="username">User name</div>
+            <div class="sub-head">User name</div>
             <input type="text" value="Atrk">
-            <div class="username">User name</div>
+            <div class="sub-head">First name</div>
+            <input type="text" value="s">
+            <div class="sub-head">Last name</div>
             <input type="text" value="Atrk">
-            <div class="username">User name</div>
+            <div class="sub-head">Email</div>
             <input type="text" value="Atrk">
+            <div class="save"> <input type="submit" value="Save"> <input type="reset" value="cancel"> </div>
         </div>
+    </form>
     </div>
 </body>
 </html>

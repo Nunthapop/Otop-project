@@ -30,7 +30,7 @@ ini_set("memory_limit",-1); // no ram limit;
                     <li><a href="#">
                     <?php
                     if(isset($_SESSION['username'])){
-                    echo "<li><a href='logout.php'> ".$_SESSION['username']  .  ' id:' . $_SESSION['customer_id'];
+                    echo "<li><a href='profile.php'> ".$_SESSION['username']  .  ' id:' . $_SESSION['customer_id'];
                     echo "</a></li>";
                     }
                     else{
