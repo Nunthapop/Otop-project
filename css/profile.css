@@ -28,8 +28,7 @@ a{
 @keyframes hover{
     0%{ font-size: 1.3rem;}
     0%{ font-size: 1.5rem;}
-    20%{ font-size: 1.5rem;}
-    100%{ font-size: 1.5rem;}
+  
 }
 .profile a:hover{
     animation: hover 30s;
