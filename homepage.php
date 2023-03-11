@@ -70,5 +70,5 @@ require "header_index.php";
 </html>
 
 <?php
-require_once "footer.php";
+require "footer.php";
 ?>
