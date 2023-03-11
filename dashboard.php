@@ -39,6 +39,8 @@ if (($_SESSION['level'] == 1)){?>
             <input type="text" name="price">
             <div class="upload">City</div>
             <input type="text" name="city">
+            <div class="upload">Subtitle</div>
+            <input type="text" name="city">
             
             <div class="upload">Product description</div>
             <textarea name="desc" id="" cols="30" rows="10" ></textarea>

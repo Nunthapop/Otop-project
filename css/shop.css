@@ -8,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 main{
     
     display: grid;
@@ -30,7 +31,7 @@ main{
     
 }
 
-img{
+.img img{
     width: 17vw;
     height: auto;
     margin-top: 2rem;
@@ -87,5 +88,4 @@ margin-top: 5%;
         100% { opacity: 1;
             transform: translateY(0%);  }
 }
-    
     

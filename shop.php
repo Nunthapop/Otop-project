@@ -46,7 +46,7 @@ require "header_index.php";
             
             <div class="product-box">
                
-                <img src="image/<?php echo$row['img']?>" alt="">
+                <div class="img"> <img src="image/<?php echo$row['img']?>"  alt=""></div>
                 
                 <h1> <?php echo$row['product_name']; ?></h1>
                 <div class="price"> Price: <?php echo number_format($row['product_price'],2)?> THB</div>

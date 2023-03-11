@@ -20,8 +20,9 @@ ini_set("memory_limit",-1); // no ram limit;
             
             <header >
             <nav>
-                <label img src="image/logosh.png" alt="" ></label>
+             
                 <ul>
+                <li><img src="image/Logo.png" alt="" class="logo"></li>
                 <li><a  class="active" href="Homepage.php">HOME</a></li>
                 <li><a class="active"href="shop.php">SHOP</a></li>
                 <li><a href="cart.php?id=0&action=non">CART</a></li>

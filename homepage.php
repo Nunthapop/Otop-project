@@ -24,7 +24,7 @@ require "header_index.php";
             </ul>
         </header> -->
         <div class="name-grid">
-            <div class="inbox1">OTOP COLLECTION</div>
+            <div class="inbox1">CONNOISSEUR</div>
             <div class="marquee">
                 <div class="marquee-wrapper">
                     <span>  Bangkok-Phuket-Chiang Mai-Pattaya-Krabi-Koh Samui-Ayutthaya-Hua Hin-Udon Thani-Surat Thani-Khon Kaen-Pathum Thani-Nakhon Sawan✳︎  </span>
