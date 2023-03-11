@@ -11,7 +11,7 @@ ini_set("memory_limit",-1); // no ram limit;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="header_indexx.css">
    
     </head>
@@ -30,7 +30,7 @@ ini_set("memory_limit",-1); // no ram limit;
                     <li><a href="#">
                     <?php
                     if(isset($_SESSION['username'])){
-                    echo "<li><a href='profile.php'> ".$_SESSION['username']  .  ' id:' . $_SESSION['customer_id'];
+                    echo "<li><a href='profile.php'> Profile";
                     echo "</a></li>";
                     }
                     else{

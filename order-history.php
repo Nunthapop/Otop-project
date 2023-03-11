@@ -48,6 +48,7 @@ $i = 1;
             <div class="nav-bar">
                 <div class="profile"> <a href="profile.php">profile</a></div>
                 <div class="order-history"><a href="order-history.php">order-history</a></div>
+                <div class="order-history"><a href="dashboard.php">Vendor</a></div>
             </div>
             <form action="saveprofile.php">
                 <div class="profile-side">

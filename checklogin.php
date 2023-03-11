@@ -17,13 +17,14 @@ if(mysqli_num_rows($result) == 0){
 }
 else{
 $row = mysqli_fetch_assoc($result);
+
 if (($_POST['username'] == $row['username'])
 && ($_POST['password'] == $row['password'])){
     $_SESSION['customer_id'] = $row['id'];
     $_SESSION['username'] = $row['username'];
     $_SESSION['firstname'] =$row['firstname'];
     $_SESSION['lastname'] = $row['lastname'];
-    $_SESSION['level'] = $row['level'];
+    $_SESSION['pass'] = $row['password'];
     header ("Location: homepage.php");
 }
 else{
