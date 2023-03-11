@@ -40,20 +40,6 @@ if($act=='remove' && !empty($p_id))  //ยกเลิกการสั่ง�
 {
     unset($_SESSION['cart'][$p_id]);
 }
-// if(empty($_SESSION['cart']) )
-// {
-//   header("location: cart.php");
-// }
-
-
-// if($act=='update')
-// {
-//     $amount_array = $_SESSION['cart'][$p_id];
-//     foreach($amount_array as $p_id=>$amount)
-//     {
-//         $_SESSION['cart'][$p_id]=$amount;
-//     }
-// }
 
 
 
@@ -91,7 +77,8 @@ if($act=='remove' && !empty($p_id))  //ยกเลิกการสั่ง�
             foreach($_SESSION['cart'] as $p_id=>$qty)
             
             {
-              $sql = "select * from product where id=$p_id";
+              $sql = "SELECT * FROM image  
+              JOIN product as p on image.product_id = p.id where p.id= $p_id";
 		      $query = mysqli_query($connect, $sql);
 		        $row = mysqli_fetch_array($query);
 		        $sum = $row['product_price'] * $qty;
@@ -104,7 +91,7 @@ if($act=='remove' && !empty($p_id))  //ยกเลิกการสั่ง�
             ?>
                     <div class="product">
                         <div class="grid1">
-                            <img src="image/1.webp" alt="" />
+                            <img src="image/<?php echo$row['img']?>" alt="" />
                         </div>
                         <div class="grid2">
                             <div class="product-name"><?php echo $row['product_name']?></div>

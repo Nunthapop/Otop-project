@@ -25,6 +25,7 @@ if (($_POST['username'] == $row['username'])
     $_SESSION['firstname'] =$row['firstname'];
     $_SESSION['lastname'] = $row['lastname'];
     $_SESSION['pass'] = $row['password'];
+    $_SESSION['level'] = $row['level'];
     header ("Location: homepage.php");
 }
 else{

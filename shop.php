@@ -38,13 +38,16 @@ require "header_index.php";
         
         <main>
             <?php 
-            $query = "SELECT * FROM product order by id ASC  ";
+            $query = "SELECT * FROM image  
+            JOIN product as p on image.product_id = p.id; ";
             $result = mysqli_query($connect, $query);
             
             while($row =mysqli_fetch_assoc($result)){?>
+            
             <div class="product-box">
                
-                <img src="image/1.webp" alt="">
+                <img src="image/<?php echo$row['img']?>" alt="">
+                
                 <h1> <?php echo$row['product_name']; ?></h1>
                 <div class="price"> Price: <?php echo number_format($row['product_price'],2)?> THB</div>
                 <div class="desc">description 

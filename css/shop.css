@@ -31,8 +31,8 @@ main{
 }
 
 img{
-    max-width: 20vw;
-    max-height:auto;
+    width: 17vw;
+    height: auto;
     margin-top: 2rem;
     animation: fadeIn 5s ;
     border-radius: 40px;

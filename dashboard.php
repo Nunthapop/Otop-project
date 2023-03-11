@@ -15,11 +15,11 @@
     </head>
 </html>
 <?php
-$query ="SELECT * FROM vendor";
+$query ="SELECT * FROM customer";
 $result = mysqli_query($connect, $query);
 $row =mysqli_fetch_assoc($result);
 
-if (($_SESSION['username'] == $row['username'])){?>
+if (($_SESSION['level'] == 1)){?>
 
 <title>Profile</title>
 </head>
@@ -30,20 +30,19 @@ if (($_SESSION['username'] == $row['username'])){?>
             <div class="order-history"><a href="order-history.php">order-history</a></div>
             <div class="order-history"><a href="dashboard.php">Vendor</a></div>
         </div>
-        <form action="insert_product.php" method="post" enctype="multipart/form-data">
+        <form action="insert_product.php" method="post" 
         <div class="profile-side">
             <div class="title">Upload your product</div>
             <div class="upload">Product name</div>
-            <input type="text">
+            <input type="text" name="name">
             <div class="upload">Product price</div>
-            <input type="text">
+            <input type="text" name="price">
             <div class="upload">City</div>
-            <input type="text">
-            <div class="upload">Vendor name</div>
-            <input type="text">
+            <input type="text" name="city">
+            
             <div class="upload">Product description</div>
-            <textarea name="desc" id="" cols="30" rows="10"></textarea>
-            <input type="file" name="uploadfile">
+            <textarea name="desc" id="" cols="30" rows="10" ></textarea>
+           
             <input type="submit">
           
         </div>
