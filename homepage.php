@@ -65,10 +65,8 @@ require "header_index.php";
                
             </div>
        </div>
-        
-       <footer>
-
-       </footer>
-    
+<?php
+require_once "footer.php";
+    ?>
     </body>
 </html>
