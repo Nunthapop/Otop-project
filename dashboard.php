@@ -30,8 +30,20 @@ if (($_SESSION['username'] == $row['username'])){?>
             <div class="order-history"><a href="order-history.php">order-history</a></div>
             <div class="order-history"><a href="dashboard.php">Vendor</a></div>
         </div>
-        <form action="saveprofileupdate.php" method="post">
+        <form action="insert_product.php" method="post">
         <div class="profile-side">
+            <div class="title">Upload your product</div>
+            <div class="upload">Product name</div>
+            <input type="text">
+            <div class="upload">Product price</div>
+            <input type="text">
+            <div class="upload">City</div>
+            <input type="text">
+            <div class="upload">Vendor name</div>
+            <input type="text">
+            <div class="upload">Product description</div>
+            <textarea name="desc" id="" cols="30" rows="10"></textarea>
+            <input type="file" >
           
         </div>
     </form>
