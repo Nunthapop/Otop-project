@@ -25,7 +25,8 @@ $id =$_GET['id'];
 </head>
 
 <body>
-    <?php $query = "SELECT * FROM product WHERE id ='$id'";
+    <?php $query = "SELECT * FROM image  
+              JOIN product as p on image.product_id = p.id where p.id= $id";
 $result = mysqli_query($connect, $query);
 $row = mysqli_fetch_assoc($result);
 // $row = array();
@@ -39,9 +40,9 @@ $row = mysqli_fetch_assoc($result);
     <div class="main">
         <form action="cart.php?id=<?php echo $id;?>&action=add" method="post">
             <div class="img-gallery">
-                <img src="image/item1.jpg" alt="">
-                <img src="image/item1.jpg" alt="">
-                <img src="image/item1.jpg" alt="">
+                <img src="image/<?php echo$row['img']?>" alt="">
+                <img src="image/<?php echo$row['img']?>" alt="">
+                <img src="image/<?php echo$row['img']?>" alt="">
             </div>
             <div class="grid">
                 <div class="flex-left">

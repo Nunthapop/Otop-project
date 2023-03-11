@@ -50,8 +50,7 @@ require "header_index.php";
                 
                 <h1> <?php echo$row['product_name']; ?></h1>
                 <div class="price"> Price: <?php echo number_format($row['product_price'],2)?> THB</div>
-                <div class="desc">description 
-                    so sodescription description description</div>
+                <div class="desc"><?php echo$row['subtitle']; ?></div>
                     <div class="add"><a href="product.php?id=<?php echo$row['id'] ?>">GET IN</a></div>
             </div><?php } ?>
             

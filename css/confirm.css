@@ -42,8 +42,9 @@
     max-height: auto;
  }
  .name{
+   /* border: #222 solid 1px; */
     margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 font-weight: 600;
 margin-left: 4.6%;
  }
@@ -58,7 +59,7 @@ margin-left: 4.6%;
  .qty{
     font-weight: 700;
     margin-top: 40px;
-    margin-left: 60%;
+    margin-left: 50%;
     
 
  }
