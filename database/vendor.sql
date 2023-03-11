@@ -24,37 +24,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order_head`
+-- Table structure for table `vendor`
 --
 
-CREATE TABLE `order_head` (
-  `id` int(11) NOT NULL,
-  `customer_id` int(11) NOT NULL,
-  `date` date NOT NULL,
-  `total` int(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `phone` int(100) NOT NULL,
-  `email` varchar(255) NOT NULL
+CREATE TABLE `vendor` (
+  `id` int(20) NOT NULL,
+  `username` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `order_head`
+-- Dumping data for table `vendor`
 --
 
-INSERT INTO `order_head` (`id`, `customer_id`, `date`, `total`, `address`, `phone`, `email`) VALUES
-(1, 1, '2023-03-09', 350, 'wdwdwd', 232312, 'nuntapop@'),
-(2, 1, '2023-03-09', 250, '', 0, ''),
-(3, 1, '2023-03-11', 650, '', 0, ''),
-(4, 1, '2023-03-11', 950, '', 0, '');
+INSERT INTO `vendor` (`id`, `username`) VALUES
+(1, 'vendor'),
+(2, 'vendor');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `order_head`
+-- Indexes for table `vendor`
 --
-ALTER TABLE `order_head`
+ALTER TABLE `vendor`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -62,10 +55,10 @@ ALTER TABLE `order_head`
 --
 
 --
--- AUTO_INCREMENT for table `order_head`
+-- AUTO_INCREMENT for table `vendor`
 --
-ALTER TABLE `order_head`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `vendor`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
