@@ -79,7 +79,7 @@ if($act=='remove' && !empty($p_id))  //ยกเลิกการสั่ง�
                     <!-- start -->
                     <?php $total=0;
                     $final_total =0;
-                    $fee =50;
+                    $fee =0;
                     $shipping = 0;
 
                     if($shipping == 0){ 
