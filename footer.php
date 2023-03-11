@@ -1,7 +1,7 @@
 <html> 
     <head>
         <style tyype="text/css">
-        body {
+        .footer1 {
     text-align: center;
     padding-top: 20px;
     color: grey;
