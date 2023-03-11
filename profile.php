@@ -42,6 +42,7 @@ if (isset($_SESSION['saved'])) {
             <div class="sub-head">Email</div>
             <input type="text" value="<?php echo $row['email']; ?>" name="email">
             <div class="save"> <input type="submit" value="Save"> <input type="reset" value="cancel"> </div>
+            <div class="logout"> <a href="logout.php">Logout</a></div>
         </div>
     </form>
     </div>

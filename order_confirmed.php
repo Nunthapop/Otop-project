@@ -31,7 +31,7 @@
 <body>
     <div class="thx">
         <h1>Thank for support us!</h1>
-        <div class="History"><a href=""> See your Order History</a></div>
+        <div class="History"><a href="order-history.php"> See your Order History</a></div>
 
     </div>
 
