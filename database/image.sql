@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2023 at 11:34 AM
+-- Generation Time: Mar 11, 2023 at 06:35 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -24,30 +24,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `vendor`
+-- Table structure for table `image`
 --
 
-CREATE TABLE `vendor` (
-  `id` int(20) NOT NULL,
-  `username` varchar(20) NOT NULL
+CREATE TABLE `image` (
+  `id` int(11) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `product_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `vendor`
+-- Dumping data for table `image`
 --
 
-INSERT INTO `vendor` (`id`, `username`) VALUES
-(1, 'vendor'),
-(2, 'vendor');
+INSERT INTO `image` (`id`, `img`, `product_id`) VALUES
+(2, 'chick-bow.jpg', 2),
+(3, 'fish.png', 3);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `vendor`
+-- Indexes for table `image`
 --
-ALTER TABLE `vendor`
+ALTER TABLE `image`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -55,10 +56,10 @@ ALTER TABLE `vendor`
 --
 
 --
--- AUTO_INCREMENT for table `vendor`
+-- AUTO_INCREMENT for table `image`
 --
-ALTER TABLE `vendor`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `image`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

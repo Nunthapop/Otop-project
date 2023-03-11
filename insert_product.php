@@ -1,6 +1,6 @@
 <?php require "header_index.php";
 
-
+$sub = $_POST['subtitle'];
 
 $name = $_POST['name'];
 $_SESSION['name'] =$name;
@@ -9,7 +9,7 @@ $city = $_POST['city'];
 $vendor = $_SESSION['username'];
 $desc = $_POST['desc']; 
 $query = "INSERT INTO product (product_name,product_price,product_desc,city,vendor) 
-VALUE('$name','$price','$desc','$city','$vendor ')";
+VALUE('$name','$price','$desc','$city','$vendor',)";
 $result = mysqli_query($connect, $query);
 if(!$result){
     die ("insert error");
