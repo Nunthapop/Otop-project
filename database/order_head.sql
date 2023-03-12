@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2023 at 06:35 PM
+-- Generation Time: Mar 12, 2023 at 03:00 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -42,7 +42,8 @@ CREATE TABLE `order_head` (
 --
 
 INSERT INTO `order_head` (`id`, `customer_id`, `date`, `total`, `address`, `phone`, `email`) VALUES
-(5, 1, '2023-03-11', 680, 'asdsdsdsd', 129, 'nuntapop@cmu.ac');
+(1, 1, '2023-03-12', 210, '2323 ThatTong sound Bangkok', 29937721, 'nuntapop@gmail.com'),
+(2, 1, '2023-03-12', 648, '536 that thong sound bangkok 10000', 2147483647, 'nuntapop@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +63,7 @@ ALTER TABLE `order_head`
 -- AUTO_INCREMENT for table `order_head`
 --
 ALTER TABLE `order_head`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

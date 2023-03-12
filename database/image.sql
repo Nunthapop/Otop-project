@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2023 at 06:35 PM
+-- Generation Time: Mar 12, 2023 at 03:00 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -38,8 +38,9 @@ CREATE TABLE `image` (
 --
 
 INSERT INTO `image` (`id`, `img`, `product_id`) VALUES
-(2, 'chick-bow.jpg', 2),
-(3, 'fish.png', 3);
+(1, 'chick-bow.jpg', 1),
+(2, 'fish.png', 2),
+(3, 'Glass coasters water absorbent coasters.png', 3);
 
 --
 -- Indexes for dumped tables

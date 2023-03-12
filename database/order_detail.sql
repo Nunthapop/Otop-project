@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2023 at 06:35 PM
+-- Generation Time: Mar 12, 2023 at 03:00 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -40,7 +40,9 @@ CREATE TABLE `order_detail` (
 --
 
 INSERT INTO `order_detail` (`id`, `order_head_id`, `product_id`, `qty`, `sub_total`) VALUES
-(7, 5, 2, 2, 630);
+(1, 1, 2, 2, 160),
+(2, 2, 1, 2, 518),
+(3, 2, 2, 1, 80);
 
 --
 -- Indexes for dumped tables
@@ -60,7 +62,7 @@ ALTER TABLE `order_detail`
 -- AUTO_INCREMENT for table `order_detail`
 --
 ALTER TABLE `order_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

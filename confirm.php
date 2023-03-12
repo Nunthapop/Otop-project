@@ -36,7 +36,7 @@ else{
                         <div class="qty"><?php  echo $qty;?></div>
             </div> 
             <?php }
-            $total = $total + 50;?>             
+        ?>             
             <div class="payment">
                 <div class="total">
                     <div class="total-price">Total</div> <div class="number-price"><?php  echo number_format($total,2);?> ฿</div>

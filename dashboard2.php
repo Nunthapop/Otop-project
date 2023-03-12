@@ -9,8 +9,7 @@ $result = mysqli_query($connect, $query);
 $sql_row =mysqli_num_rows($result); //count row for loop the order number
 $total =0;
 $i = 1;
-$query2 = "SELECT * FROM product as p join customer as c on p.vendor = c.username where p.vendor = '$username'; ";
-$result2 = mysqli_query($connect, $query2);
+
 ?>
 
 
