@@ -73,7 +73,7 @@ if($act=='remove' && !empty($p_id))  //ยกเลิกการสั่ง�
 
           if(!empty($_SESSION['cart']))
         { 
-            include "config.php";
+            
             foreach($_SESSION['cart'] as $p_id=>$qty)
             
             {
