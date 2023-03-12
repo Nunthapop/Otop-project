@@ -8,8 +8,8 @@ $price =$_POST['price'];
 $city = $_POST['city'];
 $vendor = $_SESSION['username'];
 $desc = $_POST['desc']; 
-$query = "INSERT INTO product (product_name,product_price,product_desc,city,vendor) 
-VALUE('$name','$price','$desc','$city','$vendor',)";
+$query = "INSERT INTO product (product_name,product_price,product_desc,city,vendor,subtitle) 
+VALUE('$name','$price','$desc','$city','$vendor','$sub')";
 $result = mysqli_query($connect, $query);
 if(!$result){
     die ("insert error");

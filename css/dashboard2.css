@@ -128,9 +128,13 @@ img{
     
 }
 .all-total{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 4%;
     font-weight: 600;
+   
+}
+.all-total a{
+    color: orangered;
 }
 .container-box{ /* scrolling container */
    
@@ -159,8 +163,4 @@ img{
 .all-product{
     font-size: 2rem;
     margin-bottom: 10px;
-}
-.total-sell h1{
-    color: blue;
-    margin-left: -10%;
 }

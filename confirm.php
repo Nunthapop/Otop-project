@@ -23,14 +23,14 @@ else{
             <h1>My shopping cart</h1>
             <?php $total = 0;
             foreach($_SESSION['cart'] as $p_id=>$qty){
-                  $sql = "select * from product where id=$p_id";
+                  $sql = "SELECT * from product as p join image on image.product_id = p.id where p.id=$p_id";
                   $query = mysqli_query($connect, $sql);
                     $row = mysqli_fetch_array($query);
                     $sum = $row['product_price'] * $qty;
                     $total += $sum;
             ?>
             <div class="product">
-                <div class="img"><img src="image/1.webp" alt=""></div>
+                <div class="img"><img src="image/<?php  echo $row['img'];?>" alt=""></div>
                         <div class="name"><?php  echo $row['product_name'];?></div>
                         <div class="price"><?php  echo number_format($row['product_price'],2);?>฿</div>
                         <div class="qty"><?php  echo $qty;?></div>

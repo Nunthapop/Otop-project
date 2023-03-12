@@ -29,8 +29,9 @@ if (($_SESSION['level'] == 1)){?>
             <div class="profile"> <a href="profile.php">profile</a></div>
             <div class="order-history"><a href="order-history.php">order-history</a></div>
             <div class="order-history"><a href="dashboard.php">Vendor</a></div>
+            <div class="order-history"><a href="dashboard2.php">Dashboard</a></div>
         </div>
-        <form action="insert_product.php" method="post" 
+        <form action="insert_product.php" method="post" >
         <div class="profile-side">
             <div class="title">Upload your product</div>
             <div class="upload">Product name</div>
@@ -39,7 +40,7 @@ if (($_SESSION['level'] == 1)){?>
             <input type="text" name="price">
             <div class="upload">City</div>
             <input type="text" name="city">
-            <div class="upload">Subtitle</div>
+            <div class="upload">Subtitle</div> 
             <input type="text" name="subtitle">
             
             <div class="upload">Product description</div>

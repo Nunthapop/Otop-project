@@ -34,16 +34,25 @@
     padding-left: 70px;
     font-family: 'Space Grotesk', sans-serif;
 }
-.con {
-    animation: fadeIn 4s;
-    float: right;
-    padding-right: 20%;
+ .con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+.right img{
+    width: 30vw;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.1);
 }
-
-
-/*h4{
-    font-size: 25px bolder;
-    padding-left: 70px;
+.pp p {
+    text-align: center;
+    font-size: 27px;
+    margin-left: 40px;
     font-family: 'Space Grotesk', sans-serif;
+    width: 500px;
 }
-
+.pp h1{
+    margin-left: 100px;
+    margin-bottom: 5%;
+    font-size: 1.3rem;
+    margin-top: 3%;
+}

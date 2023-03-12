@@ -3,11 +3,12 @@
 
 if (isset($_POST['submit']))
 {
+    $email = $_POST['email'];
     $username =$_POST['username'];
     $firstname =$_POST['firstname'];
     $lastname =$_POST['lastname'];
     $password =$_POST['password'];
-    $usercheck =  "SELECT * FROM  customer where username = '$username' LIMIT 1";
+    $usercheck =  "SELECT * FROM  customer ";
     $result  =mysqli_query($connect, $usercheck);
         $user = mysqli_fetch_assoc($result);
         if ($user['username'] == $username ){
@@ -19,8 +20,8 @@ if (isset($_POST['submit']))
         else
         {
             
-            $query = "INSERT INTO customer ( username, firstname, lastname, password ) 
-            VALUES ( '$username', '$firstname', '$lastname', '$password')";
+            $query = "INSERT INTO customer ( username, firstname, lastname, password,level) 
+            VALUES ( '$username', '$firstname', '$lastname', '$password','0')";
             $result = mysqli_query($connect, $query); 
             
             if(!$result){
