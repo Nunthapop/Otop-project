@@ -18,10 +18,10 @@ if(!$result){
     die ("insert error");
 }
 if (move_uploaded_file($tempname, $folder)) { //move to image folder
-    echo "<h3>  Image uploaded successfully!</h3>";
+   
     header('Location:shop.php');
 } else {
-    echo "<h3>  Failed to upload image!</h3>";
+   
     header('Location:insert_product.php');
 }
 
